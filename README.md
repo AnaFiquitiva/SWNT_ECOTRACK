@@ -14,6 +14,8 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 ## Desplegar en Replit
 https://swntecotrack--anafiquitiva-p.replit.app/
+![Uploading image.png…]()
+
 
 1. En [replit.com](https://replit.com), **Create Repl → Import from GitHub**.
 2. Replit detecta `.replit` y arranca `npm run dev` en el puerto 3000.
