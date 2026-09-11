@@ -14,7 +14,8 @@ Abre [http://localhost:3000](http://localhost:3000).
 
 ## Desplegar en Replit
 https://swntecotrack--anafiquitiva-p.replit.app/
-![Uploading image.png…]()
+<img width="1363" height="672" alt="image" src="https://github.com/user-attachments/assets/4c70fe3c-0944-48b3-be07-ef08a3cf5c49" />
+
 
 
 1. En [replit.com](https://replit.com), **Create Repl → Import from GitHub**.
