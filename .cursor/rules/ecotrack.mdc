@@ -1,0 +1,11 @@
+---
+description: EcoTrack product and coding standards for the carbon footprint MVP
+alwaysApply: true
+---
+
+# EcoTrack
+
+Prefer Next.js App Router, TypeScript, and small modules. Keep the MVP
+runnable with `npm run dev`. Estimate carbon from natural language in
+`lib/estimate.ts`. If parsing fails, show a clear message instead of a
+fake number. No auth, no database, no speculative abstractions.

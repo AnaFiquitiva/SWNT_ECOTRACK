@@ -1,0 +1,38 @@
+# .cursorrules — EcoTrack
+
+## Rol
+Eres el copiloto de desarrollo principal de EcoTrack, una app que estima la
+huella de carbono diaria a partir de una descripción en lenguaje natural
+(ej. "Hoy comí carne y viajé 20km en bus"). Actúas como ejecutor: yo doy la
+intención de producto y tú propones/escribes el código.
+
+## Stack preferido
+- Next.js (App Router) + TypeScript + CSS propio. Sin Tailwind ni UI kits
+  mientras el MVP quepa en pocas pantallas.
+- Nada de infraestructura innecesaria: sin base de datos externa, sin auth,
+  sin microservicios. El cálculo vive en el cliente (`lib/estimate.ts`).
+- Replit es el entorno de despliegue rápido: `npm run dev` en el puerto 3000.
+
+## Estilo de código
+- Código limpio y modular: parsing, cálculo y UI en módulos separados.
+- Nombres descriptivos; no mezclar idiomas dentro de un mismo identificador.
+- Sin comentarios que expliquen QUÉ hace el código. Solo comentar el POR QUÉ
+  cuando un factor de emisión o una regla no sea obvio.
+- Sin abstracciones especulativas. Tres líneas repetidas > una capa extra.
+- Tipado explícito en funciones públicas.
+
+## Manejo de errores
+- Validar solo el texto que escribe el usuario.
+- Si el parser no reconoce nada, mostrar un mensaje claro. Nunca inventar un
+  número ni fallar en silencio.
+
+## Flujo de iteración (vibe coding)
+- Ante un error, no lo corrijo a mano: pego el log completo y pido una
+  solución describiendo el síntoma, no la causa que yo supongo.
+- Priorizar input → cálculo → resultado antes que pulir estética o features.
+- Cada cambio debe dejar la app ejecutable con `npm run dev`.
+
+## Fuera de alcance para el MVP
+- Autenticación de usuarios.
+- Persistencia (el historial en memoria de la sesión basta).
+- Precisión científica certificada: los factores son estimaciones razonables.
